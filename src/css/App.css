@@ -1,0 +1,26 @@
+:root{
+  --white-bg: #fff; 
+  --grey-bg: #c9c9c9;
+}
+
+@font-face {
+  font-family: noto;
+  src: url('/src/font/NotoSansKR-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: Moirai;
+  src: url('/src/font/MoiraiOne-Regular.ttf');
+}
+
+.main-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: #eee;
+  height: calc(var(--vh,1vh)*100);
+}
+
+.App-link {
+  color: #61dafb;
+}
