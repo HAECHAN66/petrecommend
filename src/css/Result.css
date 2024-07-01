@@ -5,20 +5,11 @@
     font-family: noto;
   }
 
-  .headerBox {
-    width: 305px;
-    height: 69px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    background-color: var(--white-bg);
-    border-radius: 20px;
-    margin: 20px;
-    margin-top: 60px;
-    
+  .result {
     font-family: noto;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 50px;
   }
 
   .resultBox {
@@ -36,25 +27,9 @@
   }
 
 
-  .returnButton {
-    width: 250px;
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    background-color: var(--white-bg);
-    border-radius: 20px;
-    margin: 10px;
-    
-    font-family: noto;
-    font-size: 18px;
-  }
-
-
   .reloadtext {
     display: flex;
     align-items: center;
-
+    justify-content: center;
+    gap: 10px;
   }

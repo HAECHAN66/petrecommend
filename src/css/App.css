@@ -19,6 +19,15 @@
   justify-content: center;
   background-color: #eee;
   height: calc(var(--vh,1vh)*100);
+  line-height: 20px;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  width: 430px;
+  padding: 30px;
+  margin-top: 50px;
 }
 
 .App-link {
