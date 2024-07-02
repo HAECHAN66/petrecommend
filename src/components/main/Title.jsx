@@ -16,7 +16,7 @@ const Div = styled.div `
     font-family: Moirai;
     font-size: 70px;
     text-align: left;
-    margin-bottom: 70px;  
+    margin-bottom: 50px;  
     line-height: 90px;
 `;
 

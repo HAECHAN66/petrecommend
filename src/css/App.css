@@ -30,6 +30,24 @@
   margin-top: 50px;
 }
 
+
+.resultLayout {
+  width: 100vw;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: noto;
+  background-color: #eee;
+}
+
+.result {
+  font-family: noto;
+  font-weight: bold;
+  line-height: 70px;
+  font-size: 30px;
+}
+
 .App-link {
   color: #61dafb;
 }

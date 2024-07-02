@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import { ReactComponent as Next } from '../images/next.svg';
+import { ReactComponent as Next } from '../../images/next.svg';
 
 const NextButton = ({ onClick }) => {
     return (
