@@ -1,14 +1,13 @@
-import dogImage from '../images/guin.png';
 
 // Q&A
 export const questionList =[
 
-{   i:[dogImage],
+{ 
     q:[`친구가 나에게 우울해서 빵 샀다는 말을 한다.`],
     a:[{type: '강아지', text:'헉 ㅜㅜ 왜 우울해?'},
     {type:'고양이', text:'...무슨 빵?'}]},
 
-{   i:[dogImage],
+{ 
     q:['친구가 먼저 재빠르게 뛰어가 날 재촉한다.'],
     a:[{type: '파충류', text:'조금만 천천히...'},
     {type:'페럿', text:'좋아! 누가 더 빠르나 대결이다!'}]},

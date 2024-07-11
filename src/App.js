@@ -82,8 +82,6 @@ function App() {
       <div className='questionLayout'>
         {questionList.map((val,idx)=>
           <div className='questionList' style={{display:page===idx+1?'flex':'none'}} key={idx}>
-            {/* 이미지 */}
-            <img src={val.i} alt=' ' className='questionImage' />
             {/* 질문*/}
             <div className='questionItem'>
               {val.q.map((qval,qidx)=>
