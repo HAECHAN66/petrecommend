@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# 🐶내게 맞는 반려동물을 알아보자!
+> 이지선다를 골라 나에게 맞는 반려동물을 확인해볼까요?
+>
+> 어플 코펫에서 파생된 나에게 맞는 반려동물 선택하기
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<br />
 
-In the project directory, you can run:
+### DATE
+```
+🐱 2024.6.27 ~ 2024.7.11
+```
 
-### `npm start`
+<br />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### USE TOOL  🐰
+- node.js
+- React
+- styled-component
+- Figma
+- photoshop
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br />
 
-### `npm test`
+### BLUEPRINT 🐹
+<img src =https://github.com/HAECHAN66/petrecommend/assets/81950147/fd5d91a7-ef34-4dac-90ba-b5982bbf1aec />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br />
+<br />
+<br />
+<br />
 
-### `npm run build`
+<details>
+<summary>REVIEW📑 </summary>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### 배운 것 정리
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<br />
 
-### `npm run eject`
+- `components` 분리에 대해 좀 더 감을 잡았다. 순서를 정하자면
+ 1. 전체코드 완성하기
+ 2. 컴포넌트 분리파일에 정리하기
+ 3. `App.js` 파일의 스크립트 코드를 `constants` 파일로 분리 가능
+ 4. 스크립트 코드를 가져올 때는
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```js
+improt { 이름 } from '파일위치'
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `type`의 대해 이해도가 높아졌다.
+``` js
+<ResultPic type={petContents.name} />
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+/// 지정된 petContents의 이름을 가져와 components에서 type을 비교해 알맞는 값을 호출하는 식으로 이용할 수 있다.
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- `reduce`를 사용해 최다선택 된 값을 가져오는 것을 배웠다.
+  
+```js
+  function setPet() {
+      setPetContents( // 최고값은 = accmulatror(누산값), 현재값 = currentValue
+        petList.reduce((최고값, 현재값) =>{
+          if(최고값.count < 현재값.count) 최고값 = 현재값;
+          return 최고값;
+        }, petList[0])
+      );
+  }
+```
 
-## Learn More
+<br />
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### 아쉬운 +개선할 것 정리
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br />
 
-### Code Splitting
+1. css 용어에 대해 아는 것이 부족함을 느꼈다. 특히 애니메이션과 도형 넣기에 어려움을 겪어서 아쉬웠다.
+ - 라이브러리를 활용해서 효과를 적극적으로 활용할 기회를 만들어보자.
+   
+2. `constants` 코드를 짤때 `data`를 기져오고 응용할 때 이해가 더뎠다.
+ - javascript deepdive 교재 실습 복습 {.map} 같은
+ - API 공부
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. 2-3일 정도 공백을 두고 다시 코드르 봤을 때 내 코드를 이해 못 했다...
+ - 다시 읽고 천천히 이해하면서 하는데 내가 짠 코드인데 왜 내가 한 번에 이해 못하고 기억이 나지 않을까.
+ - 커밋 시 상세하게 적어 어디까지 했고, 어떤 코드를 만들었는지 구체적으로 하면 도움이 될 듯 하다.
 
-### Analyzing the Bundle Size
+<img src = https://github.com/HAECHAN66/petrecommend/assets/81950147/ade7bd32-91e4-4c6f-8916-e67997dfddf7 />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+<br />
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+</details>
